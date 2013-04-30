@@ -14,7 +14,7 @@ class Topic extends BlogEntry {
 	static $singular_name = 'Topic';
 	
 	static $plural_name = 'Topics';
-
+	/* This is a GLOBAL change that should happen on all CISL sites */
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
