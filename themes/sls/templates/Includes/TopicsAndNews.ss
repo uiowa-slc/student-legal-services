@@ -30,7 +30,7 @@
                     <div class="span3 mod">
 	                    <% with Page(news) %>
 							<% if $Entries('','event') %>
-						        <h3 class="mod-title">Upcoming Events</h3>
+						        <h3 class="mod-title">Presentations</h3>
 						        <ul class="unstyled">
 						        	<% loop $Entries('3','event') %>
 						        	<li><a href="$Link">$MenuTitle</a>
