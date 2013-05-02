@@ -26,7 +26,7 @@
     <% include DivisionBar %>
 
     <% include Header %>
-
+    <h2>Testing</h2>
     $Layout
 
     <% include Footer %>
