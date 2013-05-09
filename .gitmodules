@@ -9,7 +9,7 @@
 	url = git://github.com/silverstripe/silverstripe-userforms.git
 [submodule "blog"]
 	path = blog
-	url = git://github.com/silverstripe/silverstripe-blog.git
+	url = git://github.com/StudentLifeMarketingAndDesign/silverstripe-blog.git
 [submodule "GridFieldBulkEditingTools"]
 	path = GridFieldBulkEditingTools
 	url = git://github.com/colymba/GridFieldBulkEditingTools.git
