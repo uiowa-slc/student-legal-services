@@ -18,6 +18,9 @@
 			</div>
 			<div class="span2">
 				<ul class="unstyled">
+					<li><a href="rental-guide/for-parents/">For Parents</a></li>
+				</ul>
+				<ul class="unstyled">
 					<li><a href="https://www.facebook.com/IowaSLS" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
 				</ul>
 			</div>
