@@ -30,8 +30,11 @@ body {
 }
 .main-bg {
 	@media screen and (min-width: $break-medium) {
-		background: url(../images/hero_image.jpg) no-repeat center top;
-		padding-top: 5em;
+		background: #000 url(../images/hero-image.jpg) no-repeat center top;
+		border-bottom: 5px solid $yellow;
+		height: 665px;
+		position: absolute;
+		width: 100%;
 	}
 }
 .content-wrapper {
@@ -40,10 +43,11 @@ body {
 	@media screen and (min-width: $break-medium) {
 		margin-left: 1em;
 		margin-right: 1em;
+		margin-top: 5em;
 		padding-left: 1.5em;
 		padding-right: 1.5em;
 	}
-	@media screen and (min-width: 66.25em) {
+	@media screen and (min-width: $break-xlarge) {
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -57,7 +61,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-right: 1px solid #ddd;
 		padding-right: 1.5em;
-		width: 70%;
+		width: 72%;
 	}
 	
 }
@@ -65,7 +69,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-left: 1px solid #ddd;
 		margin-left: -1px;
-		width: 30%;
+		width: 28%;
 	}
 }
 .padding {padding: 3em 0;}
@@ -81,7 +85,7 @@ body {
 	color: #222;
 	display: block;
 	font-family: "proxima-nova-condensed",sans-serif;
-	@include rem(33);
+	@include rem(29);
 	font-weight: 600;
 	letter-spacing: 1px;
 	line-height: 1.1;
@@ -99,6 +103,11 @@ body {
 	@media screen and (min-width: $break-xlarge) {
 		@include rem(43);
 		margin: 0.6em 0 .3em 0;
+	}
+}
+.rwd-break {
+	@media screen and (min-width: 630px) {
+		display: none;
 	}
 }
 
@@ -162,6 +171,9 @@ body {
 		}
 	}
 }
+.blog-sidebar .sec-nav a {
+	text-transform: capitalize;
+}
 
 
 /* Breadcrumbs
@@ -212,7 +224,6 @@ body {
 	border: none;
 	color: #fff;
 	display: inline-block;
-	@include rem(19);
 	font-weight: 300;
 	margin: 0;
 	padding: 10px;
@@ -220,7 +231,6 @@ body {
 	bottom: 20px;
 	left: 0;
 	z-index: 30;
-	xtext-transform: none;
 }
 
 aside .mod {
@@ -239,28 +249,40 @@ aside .mod {
 	clear: both;
 }
 .staff-list {
+	font-size: 0.1px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: justify;
+}
+.staff-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
 .staff-list li {
+	@include rem(15);
+	margin-bottom: 1em;
+	vertical-align: top;
+	text-align: left;
 	@media screen and (min-width: $break-small) {
-		float: left;
-		margin: 0 1% 2em 1%;
+		display: inline-block;
 		width: 48%;
 	}
 	@media screen and (min-width: $break-medium) {
-		margin: 0 1% 1em 1%;
-		min-height: 215px;
 		width: 23%;
 	}
+}
+.staff-list .filler {
+	height: 0;
+	margin: 0;
 }
 .staff-img {
 	width: 100%;
 }
-
 .staff-link {
 	display: block;
+	margin-bottom: .5em;
 	position: relative;
 	transition: all .2s ease-in-out;
 }
@@ -274,8 +296,12 @@ aside .mod {
 .staff-link:hover:before {
 	border: 4px solid $yellow;
 }
+.staff-name {margin: 0;}
 .staff-position {
 	display: block;
+}
+.staff-name {
+	margin: 0;
 }
 
 
@@ -329,7 +355,7 @@ aside .mod {
 	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
 	box-shadow: inset 0 1px 0 #2e2e2e;
 	color: #eee;
-	padding: 2em 0 1em;
+	padding: 3em 0 1em;
 }
 .footer p, .footer ul {
 	@include rem(11);

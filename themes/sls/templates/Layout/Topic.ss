@@ -1,10 +1,10 @@
-    <div class="main-bg">
+    <div class="main-bg"></div>
         
-        <section class="container content-wrapper clearfix">
-            $Breadcrumbs
-            <section class="main-content">
-  
-	         <article>
+    <section class="container content-wrapper clearfix">
+        $Breadcrumbs
+        <section class="main-content">
+
+        	<article>
 				<h1 class="postTitle">$Title</h1>
 				<% if TagsCollection %>
 					<p class="tags">
@@ -17,17 +17,16 @@
 
 				$Content
 				<!-- <p class="authorDate"><% _t('POSTEDBY', 'Posted by') %> $Author.XML </p> -->		
-				<% if IsOwner %><p class="edit-post"><a href="$EditURL" id="editpost" title="<% _t('EDITTHIS', 'Edit this post') %>"><% _t('EDITTHIS', 'Edit this post') %></a> | <a href="$Link(unpublishPost)" id="unpublishpost"><% _t('UNPUBLISHTHIS', 'Unpublish this post') %></a></p><% end_if %>
-            </section>
-            
-            <section class="sec-content">
-            	<%-- include SideNav --%>
-            	<% include BlogSideBar %>
-           </section>
-           </article>
+        	</article>
         </section>
+        
+        <section class="sec-content">
+        	<%-- include SideNav --%>
+        	<% include BlogSideBar %>
+        </section>
+    </section>
 
-        <% include TopicsAndNews %>
-    </div>
+    <% include TopicsAndNews %>
+    
 
 

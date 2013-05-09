@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row-fluid">
                     <div class="span6 mod">
-                        <h3 class="mod-title">Rental Topics</h3>
+                        <h3 class="mod-title">Rental Guide Articles</h3>
                         <ul class="unstyled two-col">
                         	<% with Page("rental-problems") %>
 	                        	<% loop $Entries('8') %>
@@ -37,7 +37,7 @@
 						        		<% if $Date %><small>published on $Date.Format('M. n')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
-						        	<li><a href="{$Link}tag/event">View all Events</a></li>
+						        	<li><a href="{$Link}tag/event">View all Presentations</a></li>
 						        </ul>
 							<% end_if %>
 						<% end_with %>
