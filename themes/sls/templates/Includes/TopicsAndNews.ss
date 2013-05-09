@@ -4,7 +4,7 @@
                     <div class="span6 mod">
                         <h3 class="mod-title">Rental Guide Articles</h3>
                         <ul class="unstyled two-col">
-                        	<% with Page("rental-problems") %>
+                        	<% with Page("rental-guide") %>
 	                        	<% loop $Entries('8') %>
 	                        		<li><a href="$Link">$MenuTitle</a></li>
 	                            <% end_loop %>
