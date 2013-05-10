@@ -100,7 +100,7 @@ body {
 	@media screen and (min-width: $break-small) {
 		@include rem(41);
 	}
-	@media screen and (min-width: $break-xlarge) {
+	@media screen and (min-width: $break-medium) {
 		@include rem(46);
 		margin: 0.5em 0 .25em 0;
 	}
