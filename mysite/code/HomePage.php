@@ -12,19 +12,24 @@ class HomePage extends Page {
 	public static $has_many = array(
 	);
 
-	public static $allowed_children = array("StaffPage");
-	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
 		$f->removeByName("Content");
 		$f->removeByName("InheritSidebarItems");
 		$f->removeByName("SidebarLabel");
 		$f->removeByName("SidebarItem");
-		
+
 		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
-		
-		$gridField = new GridField("HomePageFeature", "Home Page Feature", HomePageFeature::get(), $gridFieldConfig);
+
+    /* Remove  some abilities if you aren't an admin. */
+    if(!Permission::check('ADMIN')){
+      $gridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
+      $gridFieldConfig->removeComponentsByType('GridFieldDeleteAction');
+
+    }
+
+		$gridField = new GridField("HomePageFeature", "Home Page Features (Only the first six are shown)", HomePageFeature::get(), $gridFieldConfig);
 		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
 		return $f;
 	}
@@ -53,12 +58,12 @@ class HomePage_Controller extends Page_Controller {
 		parent::init();
 
 	}
-	
+
 	public function HomePageFeatures() {
 		$features = HomePageFeature::get();
-		
+
 		return $features;
-		
+
 	}
 
 }
