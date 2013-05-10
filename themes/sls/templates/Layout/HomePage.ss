@@ -2,7 +2,7 @@
     	<div class="blarg"></div>
     	<div class="container clearfix" style="clear: both;">
 			<div class="hero-text">
-                <h2 class="blocktext">Providing professional legal advice and representation for University of Iowa Students</h2>
+                <h2 class="blocktext">Student Legal Services provides professional legal advice and representation for University of Iowa Students</h2>
                 <ul>
                     <li><a href="rental/problems/">Rental Guide</a></li>
                     <li><a href="appointments/">Appointments</a></li>
