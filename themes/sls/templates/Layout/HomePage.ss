@@ -17,7 +17,7 @@
 			                	$YouTubeEmbed      
 			                <% else %>
 			                    <a href="$AssociatedPage.Link">
-			                        <img src="$Image.URL" alt="$Title">
+			                        <img src="$Image.CroppedImage(273,154).URL" alt="$Title">
 			                    </a>
 			                <% end_if %>
 			                </div>

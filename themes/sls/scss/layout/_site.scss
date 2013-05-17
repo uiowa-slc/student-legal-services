@@ -251,6 +251,32 @@ aside .mod {
 	}
 }
 
+/* Justify Grid */
+.grid-justify {
+	xfont-size: 0.1px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	& .filler {
+		height: 0;
+		margin: 0;
+	}
+}
+.grid-justify li {
+	text-align: left;
+	vertical-align: top;
+	@media screen and (min-width: $break-small) {
+		display: inline-block;
+		width: 48%;
+	}
+}
+
 /* Staff Page
 ========================================================================== */
 .staff-title {
@@ -352,64 +378,5 @@ aside .mod {
 }
 .pagination .disabled a:hover {
 	background: #fff;
-}
-
-/* Footer
-========================================================================== */
-.footer {
-	background: #222;
-	border-top: 8px solid #000;
-	-webkit-box-shadow: inset 0 1px 0 #2e2e2e;
-	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
-	box-shadow: inset 0 1px 0 #2e2e2e;
-	color: #eee;
-	padding: 3em 0 1em;
-}
-.footer p, .footer ul {
-	@include rem(11);
-}
-.footer a {
-	color: #eee;
-}
-.footer h4 {
-	color: #eee;
-	font-weight: 300;
-	margin-top: 0;
-	text-transform: uppercase;
-}
-.footer ul {
-	border-left: 1px solid #000;
-	padding-top: 1em;
-}
-.footer ul:first-child {
-	padding-top: 0;
-}
-.footer li a {
-	border-left: 1px solid #2e2e2e;
-	display: block;
-	padding: 5px 0 5px 10px;
-	-webkit-transition: all .2s ease-out;
-	&:hover {
-		border-left-color: $yellow;
-	}
-}
-.footer .btn {color: #333;}
-.footer hr {
-	border-top-color: #000;
-	border-bottom-color: #2e2e2e;
-    margin: .5em 0;
-}
-.appt-btn {
-	border: 3px solid #eee;
-	color: #eee;
-	display: block;
-	margin-top: 12px;
-	padding: 5px;
-	text-align: center;
-	&:hover {
-		background: #eee;
-		color: #333;
-		text-decoration: none;
-	}
 }
 
