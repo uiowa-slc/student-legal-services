@@ -21,13 +21,13 @@
         </section>
         <section class="sec-content">
         	
-        	<% with $SearchForm %>
+        	<!--<% with $SearchForm %>
         	 <form $FormAttributes>
 	            <label>Search</label>
                 <input type="search" placeholder="Search" results="5" name="Search" class="">
                 <input type="submit" class="">
             </form>
-            <% end_with %>
+            <% end_with %>-->
 
      
         	<% include BlogSideBar %>
