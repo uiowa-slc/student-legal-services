@@ -4,7 +4,6 @@
 <head>
 	<% base_tag %>
 	<meta charset="utf-8">
-	
 	<meta name="description" content="" /> 
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/favicon.ico" />
@@ -16,10 +15,13 @@
 	<title>$Title - $SiteConfig.Title - The University of Iowa</title>
 	<script type="text/javascript" src="//use.typekit.net/thh5alv.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
+		<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
+	<![endif]-->
 	<% require themedCSS(master) %>
-	<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
-	
+
 </head>
 
 <body>
