@@ -1,42 +1,42 @@
 [submodule "spamprotection"]
 	path = spamprotection
-	url = git://github.com/silverstripe/silverstripe-spamprotection.git
+	url = https://github.com/silverstripe/silverstripe-spamprotection.git
 [submodule "recaptcha"]
 	path = recaptcha
-	url = git://github.com/chillu/silverstripe-recaptcha.git
+	url = https://github.com/chillu/silverstripe-recaptcha.git
 [submodule "userforms"]
 	path = userforms
-	url = git://github.com/silverstripe/silverstripe-userforms.git
+	url = https://github.com/silverstripe/silverstripe-userforms.git
 [submodule "blog"]
 	path = blog
-	url = git://github.com/StudentLifeMarketingAndDesign/silverstripe-blog.git
+	url = https://github.com/StudentLifeMarketingAndDesign/silverstripe-blog.git
 [submodule "GridFieldBulkEditingTools"]
 	path = GridFieldBulkEditingTools
-	url = git://github.com/colymba/GridFieldBulkEditingTools.git
+	url = https://github.com/colymba/GridFieldBulkEditingTools.git
 [submodule "SortableGridField"]
 	path = SortableGridField
-	url = git://github.com/UndefinedOffset/SortableGridField.git
+	url = https://github.com/UndefinedOffset/SortableGridField.git
 [submodule "EventCalendar"]
 	path = EventCalendar
-	url = git://github.com/unclecheese/EventCalendar.git
+	url = https://github.com/unclecheese/EventCalendar.git
 [submodule "widgets"]
 	path = widgets
-	url = git://github.com/silverstripe/silverstripe-widgets.git
+	url = https://github.com/silverstripe/silverstripe-widgets.git
 [submodule "GridFieldRelationHandler"]
 	path = GridFieldRelationHandler
-	url = git://github.com/simonwelsh/silverstripe-GridFieldRelationHandler.git
+	url = https://github.com/simonwelsh/silverstripe-GridFieldRelationHandler.git
 [submodule "division-bar"]
 	path = division-bar
-	url = git://github.com/StudentLifeMarketingAndDesign/division-bar.git
+	url = https://github.com/StudentLifeMarketingAndDesign/division-bar.git
 [submodule "cms"]
 	path = cms
-	url = git://github.com/silverstripe/silverstripe-cms.git
+	url = https://github.com/silverstripe/silverstripe-cms.git
 [submodule "framework"]
 	path = framework
-	url = git://github.com/silverstripe/sapphire.git
+	url = https://github.com/silverstripe/sapphire.git
 [submodule "dashboard"]
 	path = dashboard
-	url = git://github.com/unclecheese/silverstripe-dashboard.git
+	url = https://github.com/unclecheese/silverstripe-dashboard.git
 [submodule "gridfield-betterbuttons"]
 	path = gridfield-betterbuttons
-	url = git://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
+	url = https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
