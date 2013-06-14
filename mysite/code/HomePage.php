@@ -22,6 +22,8 @@ class HomePage extends Page {
 		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 
+    $gridFieldConfig2 = GridFieldConfig_RecordEditor::create();
+		$gridFieldConfig2->addComponent(new GridFieldSortableRows('SortOrder'));
     /* Remove  some abilities if you aren't an admin. */
     if(!Permission::check('ADMIN')){
       $gridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
@@ -29,8 +31,11 @@ class HomePage extends Page {
 
     }
 
-		$gridField = new GridField("HomePageFeature", "Home Page Features (Only the first six are shown)", HomePageFeature::get(), $gridFieldConfig);
+    $gridField = new GridField("HomePageHeroFeature", "Home Page Hero Features (Only the first two are shown)", HomePageHeroFeature::get(), $gridFieldConfig);
+  	$gridField2 = new GridField("HomePageFeature", "Home Page Features (Only the first three are shown)", HomePageFeature::get(), $gridFieldConfig2);
+
 		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
+    $f->addFieldToTab("Root.Main", $gridField2); // add the grid field to a tab in the CMS	*/
 		return $f;
 	}
 }
@@ -61,6 +66,13 @@ class HomePage_Controller extends Page_Controller {
 
 	public function HomePageFeatures() {
 		$features = HomePageFeature::get();
+
+		return $features;
+
+	}
+
+	public function HomePageHeroFeatures() {
+		$features = HomePageHeroFeature::get();
 
 		return $features;
 

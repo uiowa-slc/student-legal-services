@@ -16,11 +16,11 @@ class StaffHolderPage extends Page {
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
 		//$f->removeByName("Content");
-		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
-		//$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 		
 		
-		$gridField = new GridField("StaffTeam", "Staff Teams", StaffTeam::get(), GridFieldConfig_RecordEditor::create());
+		$gridField = new GridField("StaffTeam", "Staff Teams", StaffTeam::get(), $gridFieldConfig);
 		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	
 		return $f;
 	}

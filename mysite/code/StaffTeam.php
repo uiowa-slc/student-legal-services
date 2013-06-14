@@ -2,7 +2,8 @@
 class StaffTeam extends DataObject {
 
 	public static $db = array(
-		"Name" => "Text"
+		"Name" => "Text",
+		"SortOrder" => "Int"
 	
 	);
 
@@ -13,6 +14,10 @@ class StaffTeam extends DataObject {
 	
 	public static $summary_fields = array( 
 	  'Name' => 'Name',
+   );
+   
+   public static $default_sort = array(
+   		"SortOrder"
    );
 
 }
