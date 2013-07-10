@@ -8,6 +8,9 @@
 				<p>157 Iowa Memorial Union<br>
 					Iowa City, IA 52242<br>
 					Phone: 319-335-3276, Fax: 319-353-2242</p>
+				<p>Hours of operation: <br />
+					8am-12pm and 1pm-5pm M-F
+				</p>
 			</div>
 			<div class="col-3-8">
 				<div class="colgroup">
