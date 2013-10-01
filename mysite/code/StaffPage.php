@@ -1,14 +1,14 @@
 <?php
 class StaffPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"FirstName" => "Text",
 		"LastName" => "Text",
 		"Position" => "Text",
 	
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		"Photo" => "Image",
 		"Team" => "StaffTeam"
 	);
@@ -36,7 +36,7 @@ class StaffPage extends Page {
 		
 	}
 	
-	//public static $allowed_children = array("");
+	//private static $allowed_children = array("");
 
 }
 class StaffPage_Controller extends Page_Controller {
@@ -56,7 +56,7 @@ class StaffPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

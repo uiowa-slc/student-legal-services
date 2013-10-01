@@ -1,17 +1,17 @@
 <?php
 class StaffHolderPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	
 	);
 
-	public static $has_many = array(
+	private static $has_many = array(
 	);
 
-	public static $allowed_children = array("StaffPage");
+	private static $allowed_children = array("StaffPage");
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
@@ -49,7 +49,7 @@ class StaffHolderPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

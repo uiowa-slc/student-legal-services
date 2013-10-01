@@ -1,27 +1,27 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 		
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 
 
-	public static $many_many = array (
+	private static $many_many = array (
 		"SidebarItems" => "SidebarItem"
 	);
 
-    public static $many_many_extraFields=array(
+    private static $many_many_extraFields=array(
         'SidebarItems'=>array(
             'SortOrder'=>'Int'
         )
     );
 
-    public static $plural_name = "Pages";
+    private static $plural_name = "Pages";
 
-	public static $defaults = array (
+	private static $defaults = array (
 
 
 		"Content" =>
@@ -62,7 +62,12 @@ class Page extends SiteTree {
 
 
     public function SidebarItems() {
-        return $this->getManyManyComponents('SidebarItems')->sort('SortOrder');
+        return $this->getManyManyComponents('SidebarItems')/*
+### @@@@ UPGRADE REQUIRED @@@@ ###
+FIND: ->sort(
+NOTE: ArrayList and DataList sort method no longer modifies current list; only returns a new version. 
+### @@@@ ########### @@@@ ###
+*/->sort('SortOrder');
     }
 	
 }
@@ -83,7 +88,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {
