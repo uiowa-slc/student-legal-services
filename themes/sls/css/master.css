@@ -1342,7 +1342,7 @@ table {
 @media screen and (min-width: 480px) {
   /* line 8, ../scss/layout/_home.scss */
   .hero-image-container {
-    background: url(themes/sls/images/hero-image-home.jpg) no-repeat top right;
+    background: url(../../themes/sls/images/hero-image-home.jpg) no-repeat top right;
     width: 100%;
     position: absolute;
     height: 100%;
