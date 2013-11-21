@@ -1762,7 +1762,7 @@ table {
 @media screen and (min-width: 768px) {
   /* line 157, ../scss/layout/_nav.scss */
   .nav-main a:hover, .nav-main a:focus {
-    background: url(../images/nav_hover.gif) repeat-x left bottom;
+    background: url(../../../../themes/sls/images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
   }
   /* line 162, ../scss/layout/_nav.scss */
@@ -1786,7 +1786,7 @@ table {
 @media screen and (min-width: 768px) {
   /* line 181, ../scss/layout/_nav.scss */
   .nav-main .active a {
-    background: url(../images/nav_hover.gif) repeat-x left bottom;
+    background: url(../../../../themes/sls/images/nav_hover.gif) repeat-x left bottom;
   }
   /* line 184, ../scss/layout/_nav.scss */
   .nav-main .active a:after {
@@ -1941,7 +1941,7 @@ body {
 @media screen and (min-width: 768px) {
   /* line 31, ../scss/layout/_site.scss */
   .main-bg {
-    background: black url(../images/hero-image.jpg) no-repeat center top;
+    background: black url(../../../../themes/sls/images/hero-image.jpg) no-repeat center top;
     border-bottom: 5px solid #ffce39;
     height: 665px;
     position: absolute;
