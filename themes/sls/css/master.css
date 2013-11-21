@@ -2006,7 +2006,7 @@ body {
 ========================================================================== */
 /* line 80, ../scss/layout/_site.scss */
 .header {
-  background: white url(../images/nav_yellow.gif) repeat-x left bottom;
+  background: white url(../../../../themes/sls/images/nav_yellow.gif) repeat-x left bottom;
   position: relative;
 }
 
