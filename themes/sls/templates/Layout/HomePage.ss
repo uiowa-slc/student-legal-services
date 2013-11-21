@@ -1,5 +1,5 @@
-    <div class="test">
-    	<div class="blarg"></div>
+    <div class="hero">
+    	<div class="hero-image-container"></div>
     	<div class="container clearfix" style="clear: both;">
 			<div class="hero-text clearfix">
                 <h2 class="blocktext">Student Legal Services provides professional legal advice and representation for University of Iowa Students</h2>
@@ -8,7 +8,7 @@
                     <li><a href="appointments/">Appointments</a></li>
                 </ul>
             </div>
-			<div class="test-right">
+			<div class="hero-right">
 		        <div class="home-highlights clearfix">
 			        <% loop HomePageFeatures %>
 			            <div class="module">

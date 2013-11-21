@@ -1,14 +1,14 @@
 /* Home Hero
 ========================================================================== */
-.test {
+.hero {
 	background: #f2f2f2;
 	border-bottom: 5px solid $yellow;
 	position: relative;
 }
-.blarg {
+.hero-image-container {
 	
 	@media screen and (min-width: $break-small) {
-		background: url(../images/hero-image-home.jpg) no-repeat top right;
+		background: url(themes/sls/hero-image-home.jpg) no-repeat top right;
 		width: 100%;
 		position: absolute;
 		height: 100%;
@@ -21,7 +21,7 @@
 		top: 0;
 	}
 }
-.test-right {
+.hero-right {
 	background: #f2f2f2;
 	@media screen and (min-width: $break-small) and (max-width: $break-medium) {
 		margin-left: -1em;

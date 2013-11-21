@@ -9,8 +9,6 @@
 	<link rel="shortcut icon" href="{$ThemeDir}/images/favicon.ico" />
 	
 	<title>$Title - $SiteConfig.Title - The University of Iowa</title>
-	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
-	<link rel="stylesheet" href="{$BaseHref}/division-bar/css/_division-bar.css" />
 	<!--[if lt IE 9]>
 		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
 		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
