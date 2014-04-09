@@ -3,15 +3,9 @@
 global $project;
 $project = 'mysite';
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => 'root',
-	"password" => 'omega',
-	"database" => 'sls',
-	"path" => '',
-);
+global $database;
+$database = 'sls';
+require_once("conf/ConfigureFromEnv.php");
 
 MySQLDatabase::set_connection_charset('utf8');
 
