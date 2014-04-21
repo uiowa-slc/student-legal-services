@@ -30,7 +30,7 @@ body {
 }
 .main-bg {
 	@media screen and (min-width: $break-medium) {
-		background: #000 url(../../../../themes/sls/images/hero-image.jpg) no-repeat center top;
+		background: #000 url(../images/hero-image.jpg) no-repeat center top;
 		border-bottom: 5px solid $yellow;
 		height: 665px;
 		position: absolute;
@@ -78,7 +78,7 @@ body {
 /* Header
 ========================================================================== */
 .header {
-	background: #fff url(../../../../themes/sls/images/nav_yellow.gif) repeat-x left bottom;
+	background: #fff url(../images/nav_yellow.gif) repeat-x left bottom;
 	position: relative;
 }
 .logo {
