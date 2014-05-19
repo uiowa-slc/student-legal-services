@@ -21,9 +21,6 @@ framework/
 googlesitemaps/
 assets/
 division-project/
-
-division-bar
-
-division-bar
-
+division-bar/
 mathspamprotection/
+node_modules/
