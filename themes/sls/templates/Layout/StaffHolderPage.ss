@@ -1,7 +1,7 @@
 <div class="main-bg"></div>   
 <section class="container content-wrapper clearfix">
       $Breadcrumbs
-      <section class="staff-content">
+      <section class="staff-content main-content">
             $Form
             $Content
             <% loop StaffTeams %>
