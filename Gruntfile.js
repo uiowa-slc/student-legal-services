@@ -66,7 +66,7 @@ module.exports = function(grunt) {
      criticalcss: {
             custom: {
                 options: {
-                    url: "http://localhost:8888/uisg-kit/",
+                    url: "http://localhost:8888/student-legal-services/",
                     width: 1200,
                     height: 900,
                     outputfile: "<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss",

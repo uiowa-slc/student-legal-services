@@ -69,7 +69,7 @@
 .dosl, .adr{ float: none; width: auto; }
 .dosl{ display: block; padding-bottom: 0px; }
 }
-article, header, nav, section{ display: block; }
+ footer, header, nav, section{ display: block; }
 html{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: sans-serif; background-position: initial initial; background-repeat: initial initial; }
 body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 hr{ box-sizing: content-box; height: 0px; }
@@ -81,13 +81,14 @@ input[type="search"]{ -webkit-appearance: textfield; box-sizing: content-box; }
 html, input{ color: rgb(34, 34, 34); }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
-h1, h2, h3, h4{ color: rgb(51, 51, 51); font-family: proxima-nova-condensed, sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 600; text-rendering: optimizelegibility; }
-h1{ font-size: 2.66667rem; margin-top: 0.75em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(51, 51, 51); padding-bottom: 10px; }
+ h2, h3, h4, h5{ color: rgb(51, 51, 51); font-family: proxima-nova-condensed, sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 600; text-rendering: optimizelegibility; }
 h2{ font-size: 2.2rem; }
 h3{ font-size: 1.73333rem; }
 h4{ font-size: 1.46667rem; }
+h5{ font-size: 1.13333rem; }
 ul{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-left: 24px; }
 ul ul{ margin-top: 0px; margin-bottom: 0px; }
+ul.unstyled{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 hr{ clear: both; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; border-right-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }
@@ -96,7 +97,6 @@ img{ display: inline-block; vertical-align: middle; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
 [class^="icon-"]::before{ font-family: search; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: 0.2em; text-align: center; font-variant: normal; text-transform: none; line-height: 1em; margin-left: 0.2em; }
-.icon-twitter::before{ content: ; }
 .icon-facebook::before{ content: ; }
 form{ margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; }
 input{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -108,10 +108,24 @@ input{ margin-left: 0px; width: 100%; }
 @media only screen and (min-width: 480px){
 [class*="col-"]{ float: left; padding-right: 30px; }
 .colgroup [class*="col-"]:last-of-type{ padding-right: 0px; }
+.col-3-8{ width: 37.5%; }
 .col-1-4{ width: 25%; }
 .col-1-2{ width: 50%; }
 }
 .hero{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 242, 242); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); position: relative; background-position: initial initial; background-repeat: initial initial; }
+@media screen and (min-width: 480px){
+.hero-image-container{ background-image: url(../images/hero-image-home.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; width: 100%; position: absolute; height: 100%; top: 0px; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }
+}
+@media screen and (min-width: 768px){
+.hero-image-container{ width: 70%; position: absolute; height: 100%; top: 0px; }
+}
+.hero-right{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 242, 242); background-position: initial initial; background-repeat: initial initial; }
+@media screen and (max-width: 768px) and (min-width: 480px){
+.hero-right{ margin-left: -1em; padding-left: 1em; margin-right: -1em; }
+}
+@media screen and (min-width: 768px){
+.hero-right{ float: right; width: 30%; min-height: 660px; }
+}
 .hero-text{ margin-top: 2em; margin-bottom: 2em; }
 @media screen and (min-width: 768px){
 .hero-text{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; bottom: 4em; overflow-x: hidden; overflow-y: hidden; width: 65%; }
@@ -141,8 +155,11 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 480px){
 .module:first-child{ margin-left: 0px; }
 }
+.module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
+.module .media img{ width: 100%; }
 .module .inner{ font-size: 0.93333rem; line-height: 1.5; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 18px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
+.module h3 a{ color: rgb(51, 51, 51); }
 .nav-main-wrapper{ text-align: center; max-height: 500px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background: inherit; box-shadow: inherit; margin-bottom: 0px; }
 @media screen and (max-width: 768px){
 .nav-main-wrapper{ background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; -webkit-box-shadow: rgba(0, 0, 0, 0.0664062) 0px 1px 4px; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); display: block; max-height: 44px; margin-top: 0px; margin-right: auto; margin-bottom: 1em; margin-left: auto; overflow-x: hidden; overflow-y: hidden; position: relative; width: 100%; background-position: initial initial; background-repeat: initial initial; }
@@ -180,13 +197,14 @@ input{ margin-left: 0px; width: 100%; }
 .nav-main .active a{ background-image: url(../images/nav_hover.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .nav-main .active a::after{ content: ''; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0px; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: rgb(34, 34, 34); border-left-color: transparent; display: inline-block; height: 0px; position: absolute; left: 50%; margin-left: -6px; bottom: 4px; text-decoration: none; width: 0px; }
 }
+.footer{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); border-top-width: 8px; border-top-style: solid; border-top-color: rgb(0, 0, 0); -webkit-box-shadow: rgb(46, 46, 46) 0px 1px 0px inset; box-shadow: rgb(46, 46, 46) 0px 1px 0px inset; color: rgb(238, 238, 238); padding-top: 3em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 @media screen and (min-width: 480px){
 .footer p{ font-size: 0.73333rem; }
 }
 .footer a{ color: rgb(238, 238, 238); }
- .footer h4{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
+ .footer h4, .footer h5{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
 @media screen and (min-width: 480px){
- .footer h4{ margin-top: 0px; }
+ .footer h4, .footer h5{ margin-top: 0px; }
 }
 .footer-nav{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1em; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 @media screen and (min-width: 480px){
@@ -196,6 +214,9 @@ input{ margin-left: 0px; width: 100%; }
 .footer-nav a{ display: block; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; }
 @media screen and (min-width: 480px){
 .footer-nav a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); font-size: 0.73333rem; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; }
+}
+@media only screen and (max-width: 480px){
+.mobile-half{ float: left; width: 50%; }
 }
 .footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 html{ font-size: 15px; }
@@ -208,6 +229,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 768px){
 .main-content { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); padding-right: 1.5em; width: 72%; }
 }
+.padding{ padding-top: 3em; padding-right: 0px; padding-bottom: 3em; padding-left: 0px; }
 .header{ background-image: url(../images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .logo{ color: rgb(34, 34, 34); display: block; font-family: proxima-nova-condensed, sans-serif; font-size: 1.93333rem; font-weight: 600; letter-spacing: 1px; line-height: 1.1; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
 @media screen and (min-width: 480px){
@@ -215,6 +237,16 @@ body{ background-image: initial; background-attachment: initial; background-orig
 }
 @media screen and (min-width: 768px){
 .logo{ font-size: 3.06667rem; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.25em; margin-left: 0px; }
+}
+.mod{ font-size: 0.86667rem; line-height: 1.4; position: relative; }
+.mod li{ margin-bottom: 1em; }
+.mod h3{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); font-size: 1.4rem; margin-bottom: 0.8em; padding-bottom: 5px; text-transform: uppercase; }
+.mod a{ }
+.grid-justify{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: justify; }
+.grid-justify::after{ content: ''; display: inline-block; width: 100%; }
+.grid-justify li{ text-align: left; vertical-align: top; }
+@media screen and (min-width: 480px){
+.grid-justify li{ display: inline-block; width: 48%; }
 }
 @media print{
 *{ background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: transparent !important; color: rgb(0, 0, 0) !important; box-shadow: none !important; text-shadow: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }
