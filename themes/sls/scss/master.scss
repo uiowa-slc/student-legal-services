@@ -1,6 +1,11 @@
 /* Global
 -------------------------------------------*/
-@import "../../../division-project/scss/master";
+//@import "../../../division-project/scss/master";
+
+
+@import "../../../division-bar/scss/_division-bar.scss";
+@import "../../../division-bar/scss/_md-bar.scss";
+
 @import "imports/_config.scss";
 @import "imports/_mixins.scss";
 @import "imports/_normalize.scss";
@@ -17,7 +22,10 @@
 -------------------------------------------*/
 /*@import "imports/_buttons.scss";*/
 @import "imports/_font.scss";
-@import "imports/_forms.scss";
+
+//@import "imports/_forms.scss";
+@import "../../../division-project/scss/imports/_forms.scss";
+@import "../../../division-project/scss/imports/_buttons.scss";
 /*@import "imports/_grid-bootstrap.scss";*/
 @import "imports/_grid-simple.scss";
 @import "imports/_tables.scss";
