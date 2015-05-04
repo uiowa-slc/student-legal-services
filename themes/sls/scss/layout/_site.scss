@@ -84,7 +84,7 @@ body {
 .logo {
 	color: #222;
 	display: block;
-	font-family: "proxima-nova-condensed",sans-serif;
+	font-family: $heading-font;
 	@include rem(29);
 	font-weight: 600;
 	letter-spacing: 1px;

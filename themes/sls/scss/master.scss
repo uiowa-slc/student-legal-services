@@ -6,11 +6,11 @@
 @import "../../../division-bar/scss/_division-bar.scss";
 @import "../../../division-bar/scss/_md-bar.scss";
 
-@import "imports/_config.scss";
-@import "imports/_mixins.scss";
-@import "imports/_normalize.scss";
-@import "imports/_typography.scss";
-@import "imports/_global.scss";
+@import "../../../division-project/scss/imports/_config.scss";
+@import "../../../division-project/scss/imports/_mixins.scss";
+@import "../../../division-project/scss/imports/_normalize.scss";
+@import "../../../division-project/scss/imports/_typography.scss";
+@import "../../../division-project/scss/imports/_global.scss";
 
 
 /* Vendor
@@ -21,14 +21,14 @@
 /* Imports
 -------------------------------------------*/
 /*@import "imports/_buttons.scss";*/
-@import "imports/_font.scss";
+@import "../../../division-project/scss/imports/_font.scss";
 
 //@import "imports/_forms.scss";
 @import "../../../division-project/scss/imports/_forms.scss";
 @import "../../../division-project/scss/imports/_buttons.scss";
 /*@import "imports/_grid-bootstrap.scss";*/
-@import "imports/_grid-simple.scss";
-@import "imports/_tables.scss";
+@import "../../../division-project/scss/imports/_grid-simple.scss";
+@import "../../../division-project/scss/imports/_tables.scss";
 
 
 /* Layout
@@ -45,4 +45,4 @@
 
 /* Print
 -------------------------------------------*/
-@import "imports/_print.scss";
+@import "../../../division-project/scss/imports/_print.scss";
