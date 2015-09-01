@@ -58,6 +58,8 @@ body {
 	}
 }
 .main-content {
+	text-overflow: ellipsis;
+	overflow: hidden;
 	@media screen and (min-width: $break-medium) {
 		border-right: 1px solid #ddd;
 		padding-right: 1.5em;
