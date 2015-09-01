@@ -214,6 +214,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 768px){
 .main-content, .sec-content { float: left; }
 }
+.main-content { text-overflow: ellipsis; overflow-x: hidden; overflow-y: hidden; }
 @media screen and (min-width: 768px){
 .main-content { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); padding-right: 1.5em; width: 72%; }
 }
