@@ -24,7 +24,7 @@
 					<div class="col-1-2 mobile-half">
 						<ul class="footer-nav">
 							<li><a href="rental-guide/for-parents/">For Parents</a></li>
-							<li><a href="https://www.facebook.com/IowaSLS" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
+							<li><a href="https://www.facebook.com/IowaSLS" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
 						</ul>
 					</div>
 				</div>
