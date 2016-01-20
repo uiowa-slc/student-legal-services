@@ -5,11 +5,11 @@
 			<div class="col-3-8">
 				<a href="http://studentlife.uiowa.edu"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
 				<p>Student Legal Services provides high quality, affordable legal advice and representation. We serve University of Iowa students and advice is free.</p>
-				<p>157 Iowa Memorial Union<br>
+				<p>G115 Iowa Memorial Union<br>
 					Iowa City, IA 52242<br>
 					Phone: 319-335-3276, Fax: 319-353-2242</p>
 				<p>Hours of operation: <br />
-					8-12 and 1-5 M-F
+					8am-5pm M-F
 				</p>
 			</div>
 			<div class="col-3-8">
@@ -43,7 +43,7 @@
         </div>
         <hr>
         <p>&copy; $Now.Year <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Information</a></p>
-        <p>Individuals with disabilities are encouraged to attend all University of Iowa sponsored events. If you are a person with a disability who requires a reasonable accommodation in order to participate in this program, please contact the Center for Student Leadership and Involvement in advance at 319-335-3059.</p>
+        <p>Individuals with disabilities are encouraged to attend all University of Iowa sponsored events. If you are a person with a disability who requires a reasonable accommodation in order to participate in this program, please contact Student Legal Services in advance at 319-335-3276.</p>
         
     </div>
 </footer>
