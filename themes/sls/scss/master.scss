@@ -1,49 +1,7 @@
 /* Global
 -------------------------------------------*/
-//@import "../../../division-project/scss/master";
-
-
-@import "../../../division-bar/scss/_division-bar.scss";
-@import "../../../division-bar/scss/_md-bar.scss";
-
-@import "../../../division-project/scss/imports/_config.scss";
-@import "../../../division-project/scss/imports/_mixins.scss";
-@import "../../../division-project/scss/imports/_normalize.scss";
-@import "../../../division-project/scss/imports/_typography.scss";
-@import "../../../division-project/scss/imports/_global.scss";
-
-
-/* Vendor
--------------------------------------------*/
-/*@import "vendor/_flexslider.scss";*/
-
-
-/* Imports
--------------------------------------------*/
-/*@import "imports/_buttons.scss";*/
-@import "../../../division-project/scss/imports/_font.scss";
-
-//@import "imports/_forms.scss";
-@import "../../../division-project/scss/imports/_forms.scss";
-@import "../../../division-project/scss/imports/_buttons.scss";
-@import "../../../division-project/scss/imports/_search.scss";
-/*@import "imports/_grid-bootstrap.scss";*/
-@import "../../../division-project/scss/imports/_grid-simple.scss";
-@import "../../../division-project/scss/imports/_tables.scss";
-
-
-/* Layout
--------------------------------------------*/ 
-@import "../../../division-project/scss/layout/_home.scss";
-@import "../../../division-project/scss/layout/_nav.scss";
-@import "../../../division-project/scss/layout/_footer.scss";
-
+@import "../../../division-project/scss/master";
 
 /* Site specific styles
 -------------------------------------------*/
 @import "layout/_site.scss";
-
-
-/* Print
--------------------------------------------*/
-@import "../../../division-project/scss/imports/_print.scss";
