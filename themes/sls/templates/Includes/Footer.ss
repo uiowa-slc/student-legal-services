@@ -15,14 +15,14 @@
 			<div class="col-3-8">
 				<div class="colgroup">
 					<div class="col-1-2 mobile-half">
-						<ul class="footer-nav">
+						<ul class="border-list">
 							<% loop Menu(1) %>
 								<li><a href="$Link">$MenuTitle</a></li>
 							<% end_loop %>
 						</ul>
 					</div>
 					<div class="col-1-2 mobile-half">
-						<ul class="footer-nav">
+						<ul class="border-list">
 							<li><a href="rental-guide/for-parents/">For Parents</a></li>
 							<li><a href="https://www.facebook.com/IowaSLS" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
 						</ul>
