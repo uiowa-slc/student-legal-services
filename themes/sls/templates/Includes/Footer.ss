@@ -36,7 +36,7 @@
 				<h5>319-335-3276</h5>
 				<p>Contact Us<br>
 					Email: <a href="mailto:student-legal@uiowa.edu">student-legal@uiowa.edu</a><br>
-					Address: 157 Iowa Memorial Union, Iowa City, Iowa 52242-1317
+					Address: G115 Iowa Memorial Union, Iowa City, Iowa 52242-1317
 				</p>
 				<!-- <a href="appointments/" class="appt-btn">Make An Appointment</a> -->
 			</div>
