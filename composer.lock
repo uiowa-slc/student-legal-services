@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "811a75efa55da5c85a479c00caeace5d",
@@ -317,12 +317,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0773d442aa96baf19d7195f14ba6e9c2da11f8ed"
+                "reference": "b4e2ffb457f37d629a6ec9b72fd0d9c85f3dfe2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0773d442aa96baf19d7195f14ba6e9c2da11f8ed",
-                "reference": "0773d442aa96baf19d7195f14ba6e9c2da11f8ed",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b4e2ffb457f37d629a6ec9b72fd0d9c85f3dfe2c",
+                "reference": "b4e2ffb457f37d629a6ec9b72fd0d9c85f3dfe2c",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-23T13:18:18+00:00"
+            "time": "2018-06-14T22:09:16+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -433,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239912a01c502f2d8f3c642eb2fcd4e58cf82a72"
+                "reference": "58f6e264ef0e4107c8b3d15a9c2e653b2bce0b4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239912a01c502f2d8f3c642eb2fcd4e58cf82a72",
-                "reference": "239912a01c502f2d8f3c642eb2fcd4e58cf82a72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/58f6e264ef0e4107c8b3d15a9c2e653b2bce0b4d",
+                "reference": "58f6e264ef0e4107c8b3d15a9c2e653b2bce0b4d",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -491,7 +491,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-04-24T00:35:57+00:00"
+            "time": "2018-06-08T08:55:26+00:00"
         },
         {
             "name": "heyday/silverstripe-versioneddataobjects",
@@ -986,12 +986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "17e1bf29dc7c831e0f6101389453fe23ae60b071"
+                "reference": "460ec461cad8a90180086c6382ed4796ba3ea48f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/17e1bf29dc7c831e0f6101389453fe23ae60b071",
-                "reference": "17e1bf29dc7c831e0f6101389453fe23ae60b071",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/460ec461cad8a90180086c6382ed4796ba3ea48f",
+                "reference": "460ec461cad8a90180086c6382ed4796ba3ea48f",
                 "shasum": ""
             },
             "require": {
@@ -1045,7 +1045,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2018-05-04T18:58:50+00:00"
+            "time": "2018-06-18T18:03:36+00:00"
         },
         {
             "name": "md/rss-display",
@@ -2010,12 +2010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-themes/silverstripe-simple.git",
-                "reference": "4d546a4e525c3ad3eff2c481b996adb7b8313cce"
+                "reference": "e4b3aa2d6cfa64ad7602f723d81ebde6c9c94c0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/4d546a4e525c3ad3eff2c481b996adb7b8313cce",
-                "reference": "4d546a4e525c3ad3eff2c481b996adb7b8313cce",
+                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/e4b3aa2d6cfa64ad7602f723d81ebde6c9c94c0c",
+                "reference": "e4b3aa2d6cfa64ad7602f723d81ebde6c9c94c0c",
                 "shasum": ""
             },
             "require": {
@@ -2049,7 +2049,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2018-03-21T12:34:28+00:00"
+            "time": "2018-05-30T00:13:44+00:00"
         },
         {
             "name": "silverstripe/activedirectory",
@@ -2868,12 +2868,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "46ba7a577b068a630613a8933bb8252753863a04"
+                "reference": "f1455566e48e8df284e6d01ca0a9157b74802c9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/46ba7a577b068a630613a8933bb8252753863a04",
-                "reference": "46ba7a577b068a630613a8933bb8252753863a04",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/f1455566e48e8df284e6d01ca0a9157b74802c9b",
+                "reference": "f1455566e48e8df284e6d01ca0a9157b74802c9b",
                 "shasum": ""
             },
             "require": {
@@ -2920,7 +2920,7 @@
                 "feeds",
                 "rss"
             ],
-            "time": "2018-04-06T01:36:40+00:00"
+            "time": "2018-05-27T23:50:15+00:00"
         },
         {
             "name": "symbiote/silverstripe-addressable",
